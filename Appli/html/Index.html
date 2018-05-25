@@ -4,21 +4,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Index</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 <div id="mySidenav" class="sidenav">
-  	<a href="#" id="closebtn" onclick="closeNav()">&times;</a>
-  	<a href="#" onclick="accueil()">Accueil</a>
-  	<a href="#" onclick="recherche()">Recherche</a>
-  	<a href="#" onclick="inscription()">Inscription</a>
-  	<a href="#" onclick="profil()">Profil</a>
+  	<a href="#" id="closeBtn">&times;</a>
+  	<a href="#" id="accueilBtn">Accueil</a>
+  	<a href="#" id="rechercheBtn">Recherche</a>
+  	<a href="#" id="inscriptionBtn">Inscription</a>
+  	<a href="#" id="profilBtn" >Profil</a>
 </div>
 
-
 <div id="tete">
-	<div id="menu" onclick="openNav()">&#9776; Menu</div>
+	<div id="menu">&#9776; Menu</div>
 	<div id="titre">Partager vos expériences</div>
 </div>
 
@@ -56,7 +55,8 @@
 		</select>
 		<br/>
 		<label for="departement">Departement</label> 
-		<select name="departement">		
+		<select id="aucun_departement" name="departement">
+			<option >Aucun</option>
 		</select>
 
 		</form>
@@ -252,6 +252,6 @@ myInput.onkeyup = function() {
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrslpoe_RVNPRlQmJJIve8pZPtkXSDwSI&callback=myMap"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-<script src="script.js"></script>  
+<script src="../js/script.js"></script>
 </body>
 </html> 
